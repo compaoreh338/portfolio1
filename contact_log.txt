@@ -1,0 +1,90 @@
+[2025-06-03 17:23:41] Données reçues - Nom: Ann Gutierrez, Email: nyrehenoky@mailinator.com, Sujet: Quibusdam eos et cor
+[2025-06-03 17:23:41] Configuration SMTP - Host: smtp.gmail.com, Port: 587, Username: compaoreh338@gmail.com
+[2025-06-03 17:23:41] Tentative d'envoi de l'email...
+[2025-06-03 17:23:45] Email envoyé avec succès!
+[2025-06-03 17:25:28] Données reçues - Nom: Pearl Davidson, Email: vukyzip@mailinator.com, Sujet: Natus sed inventore 
+[2025-06-03 17:25:28] Configuration SMTP - Host: smtp.gmail.com, Port: 587, Username: compaoreh338@gmail.com
+[2025-06-03 17:25:28] Tentative d'envoi de l'email...
+[2025-06-03 17:25:32] Email envoyé avec succès!
+[2025-06-03 17:25:32] Réponse envoyée au client : {"success":true,"message":"Votre message a \u00e9t\u00e9 envoy\u00e9 avec succ\u00e8s."}
+[2025-06-03 17:25:32] Réponse JSON envoyée : {"success":true,"message":"Votre message a \u00e9t\u00e9 envoy\u00e9 avec succ\u00e8s."}
+[2025-06-03 17:27:59] Données reçues - Nom: Hall Warren, Email: nytas@mailinator.com, Sujet: Do commodi sed sed q
+[2025-06-03 17:27:59] Configuration SMTP - Host: smtp.gmail.com, Port: 587, Username: compaoreh338@gmail.com
+[2025-06-03 17:27:59] Tentative d'envoi de l'email...
+[2025-06-03 17:28:04] Email envoyé avec succès!
+[2025-06-03 17:28:04] Réponse envoyée au client : {"success":true,"message":"Votre message a \u00e9t\u00e9 envoy\u00e9 avec succ\u00e8s."}
+[2025-06-03 17:28:04] Réponse JSON envoyée : {"success":true,"message":"Votre message a \u00e9t\u00e9 envoy\u00e9 avec succ\u00e8s."}
+[2025-06-03 17:29:31] Données reçues - Nom: Priscilla Moore, Email: dabuleso@mailinator.com, Sujet: Sunt aut iusto rati
+[2025-06-03 17:29:31] Configuration SMTP - Host: smtp.gmail.com, Port: 587, Username: compaoreh338@gmail.com
+[2025-06-03 17:29:31] Tentative d'envoi de l'email...
+[2025-06-03 17:29:35] Email envoyé avec succès!
+[2025-06-03 17:29:35] Réponse envoyée au client : {"success":true,"message":"Votre message a \u00e9t\u00e9 envoy\u00e9 avec succ\u00e8s."}
+[2025-06-03 17:29:35] Réponse JSON envoyée : {"success":true,"message":"Votre message a \u00e9t\u00e9 envoy\u00e9 avec succ\u00e8s."}
+[2025-06-03 17:33:26] Données reçues - Nom: Nomlanga Nieves, Email: xityxaly@mailinator.com, Sujet: Delectus suscipit i
+[2025-06-03 17:33:26] Configuration SMTP - Host: smtp.gmail.com, Port: 587, Username: compaoreh338@gmail.com
+[2025-06-03 17:33:26] Tentative d'envoi de l'email...
+[2025-06-03 17:33:29] Email envoyé avec succès!
+[2025-06-03 17:33:29] Réponse envoyée au client : {"success":true,"message":"Votre message a \u00e9t\u00e9 envoy\u00e9 avec succ\u00e8s."}
+[2025-06-03 17:33:29] Réponse JSON envoyée : {"success":true,"message":"Votre message a \u00e9t\u00e9 envoy\u00e9 avec succ\u00e8s."}
+[2025-06-03 17:34:12] Données reçues - Nom: Raven Harrison, Email: sitab@mailinator.com, Sujet: Asperiores dolor lab
+[2025-06-03 17:34:12] Configuration SMTP - Host: smtp.gmail.com, Port: 587, Username: compaoreh338@gmail.com
+[2025-06-03 17:34:12] Tentative d'envoi de l'email...
+[2025-06-03 17:34:15] Email envoyé avec succès!
+[2025-06-03 17:34:15] Réponse envoyée au client : {"success":true,"message":"Votre message a \u00e9t\u00e9 envoy\u00e9 avec succ\u00e8s."}
+[2025-06-03 17:34:15] Réponse JSON envoyée : {"success":true,"message":"Votre message a \u00e9t\u00e9 envoy\u00e9 avec succ\u00e8s."}
+[2025-06-03 17:35:28] Données reçues - Nom: Vincent Navarro, Email: gesa@mailinator.com, Sujet: Quam eu dolores ut m
+[2025-06-03 17:35:28] Configuration SMTP - Host: smtp.gmail.com, Port: 587, Username: compaoreh338@gmail.com
+[2025-06-03 17:35:28] Tentative d'envoi de l'email...
+[2025-06-03 17:35:33] Email envoyé avec succès!
+[2025-06-03 17:36:34] Données reçues - Nom: Farrah Holt, Email: tasuzy@mailinator.com, Sujet: Quis rerum voluptate
+[2025-06-03 17:36:34] Configuration SMTP - Host: smtp.gmail.com, Port: 587, Username: compaoreh338@gmail.com
+[2025-06-03 17:36:34] Tentative d'envoi de l'email...
+[2025-06-03 17:36:37] Email envoyé avec succès!
+[2025-06-03 17:40:20] Données reçues - Nom: Wayne Ware, Email: tuzesiveci@mailinator.com, Sujet: Delectus eum eos r
+[2025-06-03 17:40:20] Configuration SMTP - Host: smtp.gmail.com, Port: 587, Username: compaoreh338@gmail.com
+[2025-06-03 17:40:20] Tentative d'envoi de l'email...
+[2025-06-03 17:40:23] Email envoyé avec succès!
+[2025-06-03 17:42:17] Données reçues - Nom: Isadora Patrick, Email: vojone@mailinator.com, Sujet: Veritatis quam ut fu
+[2025-06-03 17:42:17] Configuration SMTP - Host: smtp.gmail.com, Port: 587, Username: compaoreh338@gmail.com
+[2025-06-03 17:42:17] Tentative d'envoi de l'email...
+[2025-06-03 17:42:21] Email envoyé avec succès!
+[2025-06-03 17:44:13] Erreur d'envoi d'email : Erreur de sécurité : Token invalide.
+[2025-06-03 17:44:24] Erreur d'envoi d'email : Erreur de sécurité : Token invalide.
+[2025-06-03 17:44:27] Erreur d'envoi d'email : Erreur de sécurité : Token invalide.
+[2025-06-03 17:44:27] Erreur d'envoi d'email : Erreur de sécurité : Token invalide.
+[2025-06-03 17:44:28] Erreur d'envoi d'email : Erreur de sécurité : Token invalide.
+[2025-06-03 17:44:28] Erreur d'envoi d'email : Erreur de sécurité : Token invalide.
+[2025-06-03 17:44:40] Erreur d'envoi d'email : Erreur de sécurité : Token invalide.
+[2025-06-03 17:44:41] Erreur d'envoi d'email : Erreur de sécurité : Token invalide.
+[2025-06-03 17:44:41] Erreur d'envoi d'email : Erreur de sécurité : Token invalide.
+[2025-06-03 17:44:42] Erreur d'envoi d'email : Erreur de sécurité : Token invalide.
+[2025-06-03 17:44:42] Erreur d'envoi d'email : Erreur de sécurité : Token invalide.
+[2025-06-03 17:56:21] Erreur d'envoi d'email : Adresse email invalide.
+[2025-06-03 17:56:43] Erreur d'envoi d'email : Adresse email invalide.
+[2025-06-03 17:56:53] Erreur d'envoi d'email : Adresse email invalide.
+[2025-06-03 17:57:34] Tentative d'envoi - Nom: Dor***, Email: jyr***, Sujet: Nam ratione qui elit
+[2025-06-03 17:57:34] Tentative d'envoi de l'email...
+[2025-06-03 17:57:37] Email envoyé avec succès!
+[2025-06-03 17:57:47] Tentative d'envoi - Nom: Che***, Email: com***, Sujet: Ipsum sequi laudanti
+[2025-06-03 17:57:47] Tentative d'envoi de l'email...
+[2025-06-03 17:57:55] Email envoyé avec succès!
+[2025-06-03 17:59:49] Tentative d'envoi - Nom: Cha***, Email: mim***, Sujet: Veritatis animi vol
+[2025-06-03 17:59:49] Tentative d'envoi de l'email...
+[2025-06-03 17:59:52] Email envoyé avec succès!
+[2025-06-03 18:00:41] Tentative d'envoi - Nom: Ire***, Email: fyb***, Sujet: Nesciunt culpa porr
+[2025-06-03 18:00:41] Tentative d'envoi de l'email...
+[2025-06-03 18:00:53] Email envoyé avec succès!
+[2025-06-03 18:02:13] Tentative d'envoi - Nom: Ala***, Email: som***, Sujet: Temporibus et tenetu
+[2025-06-03 18:02:13] Tentative d'envoi de l'email...
+[2025-06-03 18:02:16] Email envoyé avec succès!
+[2025-06-03 18:06:00] Tentative d'envoi - Nom: Die***, Email: dot***, Sujet: Sit necessitatibus s
+[2025-06-03 18:06:00] Tentative d'envoi de l'email...
+[2025-06-03 18:06:06] Email envoyé avec succès!
+[2025-06-03 18:06:19] Erreur d'envoi d'email : Le message est invalide ou suspect.
+[2025-06-03 18:06:34] Tentative d'envoi - Nom: Cha***, Email: guv***, Sujet: Molestiae debitis no
+[2025-06-03 18:06:34] Tentative d'envoi de l'email...
+[2025-06-03 18:06:40] Email envoyé avec succès!
+[2025-06-03 18:08:13] Erreur d'envoi d'email : Adresse email invalide.
+[2025-06-03 18:08:21] Tentative d'envoi - Nom: Nig***, Email: com***, Sujet: Voluptate sunt venia
+[2025-06-03 18:08:21] Tentative d'envoi de l'email...
+[2025-06-03 18:08:27] Email envoyé avec succès!

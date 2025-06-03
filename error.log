@@ -1,0 +1,104 @@
+[2025-06-03 17:18:45] Données reçues - Nom: Kristen Rivers, Email: waduq@mailinator.com, Sujet: Ea omnis dolorem dol
+[2025-06-03 17:18:45] Configuration SMTP - Host: smtp.gmail.com, Port: 587, Username: compaoreh338@gmail.com
+[2025-06-03 17:18:45] Tentative d'envoi de l'email...
+[2025-06-03 17:18:46] PHPMailer Debug: SERVER -> CLIENT: 220 smtp.gmail.com ESMTP 4fb4d7f45d1cf-606a2f93289sm1605295a12.38 - gsmtp
+
+[2025-06-03 17:18:46] PHPMailer Debug: CLIENT -> SERVER: EHLO localhost
+
+[2025-06-03 17:18:46] PHPMailer Debug: SERVER -> CLIENT: 250-smtp.gmail.com at your service, [81.6.33.253]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[2025-06-03 17:18:46] PHPMailer Debug: CLIENT -> SERVER: STARTTLS
+
+[2025-06-03 17:18:46] PHPMailer Debug: SERVER -> CLIENT: 220 2.0.0 Ready to start TLS
+
+[2025-06-03 17:18:46] PHPMailer Debug: CLIENT -> SERVER: EHLO localhost
+
+[2025-06-03 17:18:47] PHPMailer Debug: SERVER -> CLIENT: 250-smtp.gmail.com at your service, [81.6.33.253]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[2025-06-03 17:18:47] PHPMailer Debug: CLIENT -> SERVER: AUTH LOGIN
+
+[2025-06-03 17:18:47] PHPMailer Debug: SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[2025-06-03 17:18:47] PHPMailer Debug: CLIENT -> SERVER: [credentials hidden]
+[2025-06-03 17:18:47] PHPMailer Debug: SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[2025-06-03 17:18:47] PHPMailer Debug: CLIENT -> SERVER: [credentials hidden]
+[2025-06-03 17:18:47] PHPMailer Debug: SERVER -> CLIENT: 235 2.7.0 Accepted
+
+[2025-06-03 17:18:47] PHPMailer Debug: CLIENT -> SERVER: MAIL FROM:<compaoreh338@gmail.com>
+
+[2025-06-03 17:18:47] PHPMailer Debug: SERVER -> CLIENT: 250 2.1.0 OK 4fb4d7f45d1cf-606a2f93289sm1605295a12.38 - gsmtp
+
+[2025-06-03 17:18:47] PHPMailer Debug: CLIENT -> SERVER: RCPT TO:<compaoreh338@gmail.com>
+
+[2025-06-03 17:18:48] PHPMailer Debug: SERVER -> CLIENT: 250 2.1.5 OK 4fb4d7f45d1cf-606a2f93289sm1605295a12.38 - gsmtp
+
+[2025-06-03 17:18:48] PHPMailer Debug: CLIENT -> SERVER: DATA
+
+[2025-06-03 17:18:48] PHPMailer Debug: SERVER -> CLIENT: 354 Go ahead 4fb4d7f45d1cf-606a2f93289sm1605295a12.38 - gsmtp
+
+[2025-06-03 17:18:48] PHPMailer Debug: CLIENT -> SERVER: Date: Tue, 3 Jun 2025 17:18:45 +0000
+
+[2025-06-03 17:18:48] PHPMailer Debug: CLIENT -> SERVER: To: Compaore S Hyacinthe <compaoreh338@gmail.com>
+
+[2025-06-03 17:18:48] PHPMailer Debug: CLIENT -> SERVER: From: Portfolio Contact Form <compaoreh338@gmail.com>
+
+[2025-06-03 17:18:48] PHPMailer Debug: CLIENT -> SERVER: Reply-To: Kristen Rivers <waduq@mailinator.com>
+
+[2025-06-03 17:18:48] PHPMailer Debug: CLIENT -> SERVER: Subject: Nouveau message de contact : Ea omnis dolorem dol
+
+[2025-06-03 17:18:48] PHPMailer Debug: CLIENT -> SERVER: Message-ID: <ZNoXAhL2j2uUSMIdjeiCT9M6cqhnQKzqYfHJnLQhzlk@localhost>
+
+[2025-06-03 17:18:48] PHPMailer Debug: CLIENT -> SERVER: X-Mailer: PHPMailer 6.10.0 (https://github.com/PHPMailer/PHPMailer)
+
+[2025-06-03 17:18:48] PHPMailer Debug: CLIENT -> SERVER: MIME-Version: 1.0
+
+[2025-06-03 17:18:48] PHPMailer Debug: CLIENT -> SERVER: Content-Type: text/html; charset=UTF-8
+
+[2025-06-03 17:18:48] PHPMailer Debug: CLIENT -> SERVER: 
+
+[2025-06-03 17:18:48] PHPMailer Debug: CLIENT -> SERVER: 
+
+[2025-06-03 17:18:48] PHPMailer Debug: CLIENT -> SERVER:             <h2>Nouveau message de contact</h2>
+
+[2025-06-03 17:18:48] PHPMailer Debug: CLIENT -> SERVER:             <p><strong>Nom :</strong> Kristen Rivers</p>
+
+[2025-06-03 17:18:48] PHPMailer Debug: CLIENT -> SERVER:             <p><strong>Email :</strong> waduq@mailinator.com</p>
+
+[2025-06-03 17:18:48] PHPMailer Debug: CLIENT -> SERVER:             <p><strong>Sujet :</strong> Ea omnis dolorem dol</p>
+
+[2025-06-03 17:18:48] PHPMailer Debug: CLIENT -> SERVER:             <p><strong>Message :</strong></p>
+
+[2025-06-03 17:18:48] PHPMailer Debug: CLIENT -> SERVER:             <p>Anim enim eu adipisi</p>
+
+[2025-06-03 17:18:48] PHPMailer Debug: CLIENT -> SERVER:         
+
+[2025-06-03 17:18:48] PHPMailer Debug: CLIENT -> SERVER: 
+
+[2025-06-03 17:18:48] PHPMailer Debug: CLIENT -> SERVER: .
+
+[2025-06-03 17:18:49] PHPMailer Debug: SERVER -> CLIENT: 250 2.0.0 OK  1748971129 4fb4d7f45d1cf-606a2f93289sm1605295a12.38 - gsmtp
+
+[2025-06-03 17:18:49] PHPMailer Debug: CLIENT -> SERVER: QUIT
+
+[2025-06-03 17:18:49] PHPMailer Debug: SERVER -> CLIENT: 221 2.0.0 closing connection 4fb4d7f45d1cf-606a2f93289sm1605295a12.38 - gsmtp
+
+[2025-06-03 17:18:49] Email envoyé avec succès!
+[2025-06-03 17:21:54] Données reçues - Nom: Ian May, Email: bupycalo@mailinator.com, Sujet: Recusandae Nam eius
+[2025-06-03 17:21:54] Configuration SMTP - Host: smtp.gmail.com, Port: 587, Username: compaoreh338@gmail.com
+[2025-06-03 17:21:54] Tentative d'envoi de l'email...
+[2025-06-03 17:21:57] Email envoyé avec succès!

@@ -1010,7 +1010,7 @@ hr {
 .st-hero.st-style2 h1 {
   font-size: 60px;
   font-weight: 600;
-  margin-bottom: 20px;
+
 }
 .st-hero.st-style2 h1 span {
   color: #3CB35A;
@@ -1403,9 +1403,6 @@ canvas {
 /*--------------------------------------------------------------
 9. About Section
 ----------------------------------------------------------------*/
-.st-about-img {
-  min-height: 550px;
-}
 
 .st-about-img-wrap {
   padding-right: 30px;
@@ -2668,4 +2665,187 @@ canvas {
   margin-bottom: 0;
 }
 
-/*# sourceMappingURL=style.css.map */
+/* Language Switcher Styles */
+.st-lang-switcher {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 20px;
+    background: #162447;
+    border-radius: 2em;
+    padding: 4px 12px;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+    position: relative;
+}
+
+.st-lang-switcher::before {
+    content: '\1F310'; /* Unicode globe 🌐 */
+    font-size: 1.2em;
+    margin-right: 10px;
+    color: #3CB35A;
+    opacity: 0.85;
+}
+
+.st-lang-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1em;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    outline: none;
+    box-shadow: 0 0 0 0 transparent;
+    position: relative;
+}
+
+.st-lang-btn.active, .st-lang-btn:focus {
+    background: #3CB35A;
+    color: #fff;
+    box-shadow: 0 0 0 2px #3CB35A33;
+}
+
+.st-lang-btn:hover:not(.active) {
+    background: #fff;
+    color: #3CB35A;
+}
+
+@media (max-width: 600px) {
+    .st-lang-switcher {
+        padding: 2px 6px;
+        gap: 6px;
+    }
+    .st-lang-btn {
+        width: 30px;
+        height: 30px;
+        font-size: 0.95em;
+    }
+}
+
+#form-message {
+    margin-top: 24px;
+    padding: 18px 24px;
+    border-radius: 12px;
+    background: #d4ede7;
+    color: #17423b;
+    font-size: 1.25rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    transition: margin-top 0.2s;
+}
+
+#form-message:empty {
+    display: none;
+}
+
+/* Grilles d'icônes interactives pour Technologies & Outils */
+.st-tech-icons-grid, .st-tools-icons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 28px;
+    margin: 32px 0 24px 0;
+    justify-items: center;
+}
+
+.st-icon-card {
+    background: #181829;
+    border-radius: 16px;
+    border: 2px solid #7f5af0;
+    box-shadow: 0 0 16px 0 #7f5af033;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    transition: box-shadow 0.2s, border-color 0.2s, transform 0.18s;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    text-align: center;
+}
+
+.st-icon-card i {
+    font-size: 2.8em;
+    margin-bottom: 12px;
+    color: #fff;
+    transition: color 0.18s;
+}
+
+.st-icon-card span {
+    font-size: 1.05em;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    margin-top: 2px;
+}
+
+.st-icon-card:hover, .st-icon-card.active, .st-icon-card:focus {
+    border-color: #fff;
+    box-shadow: 0 0 24px 0 #7f5af0cc, 0 2px 16px 0 #0008;
+    transform: translateY(-6px) scale(1.04);
+    z-index: 2;
+}
+
+@media (max-width: 900px) {
+    .st-tech-icons-grid, .st-tools-icons-grid {
+        grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+        gap: 16px;
+    }
+    .st-icon-card { width: 90px; height: 90px; font-size: 0.95em; }
+    .st-icon-card i { font-size: 2em; }
+}
+@media (max-width: 600px) {
+    .st-tech-icons-grid, .st-tools-icons-grid {
+        grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+        gap: 10px;
+    }
+    .st-icon-card { width: 70px; height: 70px; font-size: 0.9em; }
+    .st-icon-card i { font-size: 1.3em; }
+}
+
+.st-github-stats {
+    background: #181829;
+    border-radius: 16px;
+    padding: 24px 32px;
+    margin: 32px 0;
+    box-shadow: 0 0 16px 0 #7f5af033;
+    color: #fff;
+    max-width: 400px;
+}
+.st-github-stats h3 {
+    color: #7f5af0;
+    margin-bottom: 18px;
+    font-size: 1.3em;
+}
+.st-github-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.st-github-list li {
+    margin-bottom: 8px;
+    font-size: 1.05em;
+}
+
+.st-github-stats details[open] > summary {
+    color: #7f5af0;
+    font-size: 1.2em;
+    cursor: pointer;
+    outline: none;
+    margin-bottom: 12px;
+}
+.st-github-stats img {
+    border-radius: 10px;
+    margin-right: 8px;
+    box-shadow: 0 2px 8px #0004;
+    background: #181829;
+}
+.st-github-stats p {
+    margin: 0 0 8px 0;
+}
