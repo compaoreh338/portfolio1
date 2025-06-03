@@ -93,6 +93,13 @@ try {
     // Vérification DNS du domaine email
     function emailDomainExists($email) {
         $domain = substr(strrchr($email, '@'), 1);
+        
+        // Si checkdnsrr n'est pas disponible, on utilise une vérification alternative
+        if (!function_exists('checkdnsrr')) {
+            // Vérification basique du format du domaine
+            return preg_match('/^[a-zA-Z0-9][a-zA-Z0-9-]{1,61}[a-zA-Z0-9]\.[a-zA-Z]{2,}$/', $domain);
+        }
+        
         return checkdnsrr($domain, 'MX');
     }
 
