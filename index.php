@@ -63,7 +63,31 @@ require_once 'translations.php';
                 background: #18183a;
             }
         }
+
+        /* Style pour les messages de formulaire */
+        .st-form-message {
+            margin-top: 1rem;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            font-weight: 500;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        .st-form-message.success {
+            background-color: rgba(40, 167, 69, 0.1);
+            color: #28a745;
+            border: 1px solid rgba(40, 167, 69, 0.2);
+        }
+        .st-form-message.error {
+            background-color: rgba(220, 53, 69, 0.1);
+            color: #dc3545;
+            border: 1px solid rgba(220, 53, 69, 0.2);
+        }
     </style>
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- Notre script -->
+    <script src="js/email.js"></script>
 </head>
 
 <body id="home">
@@ -242,17 +266,17 @@ require_once 'translations.php';
             </div>
             <div class="st-height-b25 st-height-lg-b25"></div>
         </div>
-
-        <!-- Contact Container -->
         <div class="container">
-            <div class="row g-5">
+            <div class="row">
                 <div class="col-lg-6">
-                    <div class="st-height-b0 st-height-lg-b40"></div>
-                    <h3 class="st-contact-title"><?php echo __('contactInfo'); ?></h3>
-                    <div class="st-contact-text">
-                        <?php echo __('contactText'); ?>
-                    </div>
                     <div class="st-contact-info-wrap">
+                        <div class="st-single-contact-info">
+                            <i class="fas fa-phone-alt"></i>
+                            <div class="st-single-info-details">
+                                <h4><?php echo __('phone'); ?></h4>
+                                <a href="tel:+22673131966"><span>+226 73 13 19 66</span></a>
+                            </div>
+                        </div>
                         <div class="st-single-contact-info">
                             <i class="fas fa-envelope"></i>
                             <div class="st-single-info-details">
@@ -261,105 +285,37 @@ require_once 'translations.php';
                             </div>
                         </div>
                         <div class="st-single-contact-info">
-                            <i class="fas fa-phone-alt"></i>
-                            <div class="st-single-info-details">
-                                <h4><?php echo __('phone'); ?></h4>
-                                <a href="tel:+22673131966"><span>+226 73 13 19 66</span></a>
-                                <a href="tel:+22606897145"><span>+226 06 89 71 45</span></a>
-                            </div>
-                        </div>
-                        <div class="st-single-contact-info">
                             <i class="fas fa-map-marker-alt"></i>
                             <div class="st-single-info-details">
                                 <h4><?php echo __('address'); ?></h4>
-                                <span>Ouagadougou<br>Saaba</span>
+                                <span>Ouagadougou</span>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <h3 class="st-contact-title"><?php echo __('sendMessage'); ?></h3>
-                    <div id="st-alert"></div>
                     <form id="contactForm" class="st-contact-form">
-                        <input type="hidden" name="csrf_token" value="<?php echo generateCSRFToken(); ?>">
+                        <!-- Champ honeypot caché -->
+                        <div style="display:none;">
+                            <input type="text" name="website" tabindex="-1">
+                        </div>
+                        
                         <div class="st-form-field">
-                            <input type="text" id="name" name="name" placeholder="<?php echo __('yourName'); ?>" required>
+                            <input type="text" id="name" name="name" placeholder="<?php echo __('name'); ?>" required>
                         </div>
                         <div class="st-form-field">
-                            <input type="email" id="email" name="email" placeholder="<?php echo __('yourEmail'); ?>" required>
+                            <input type="email" id="email" name="email" placeholder="<?php echo __('email'); ?>" required>
                         </div>
                         <div class="st-form-field">
-                            <input type="text" id="subject" name="subject" placeholder="<?php echo __('yourSubject'); ?>" required>
+                            <input type="text" id="subject" name="subject" placeholder="<?php echo __('subject'); ?>" required>
                         </div>
                         <div class="st-form-field">
-                            <textarea cols="30" rows="10" id="msg" name="msg" placeholder="<?php echo __('yourMessage'); ?>" required></textarea>
+                            <textarea id="msg" name="msg" placeholder="<?php echo __('message'); ?>" required></textarea>
                         </div>
-                        <button class="st-btn st-style1 st-color1" type="submit" id="submit"><?php echo __('sendMessage'); ?></button>
+                        <button type="submit" class="st-btn st-style1 st-color1 st-size-medium"><?php echo __('sendMessage'); ?></button>
                     </form>
-                    <div id="form-message" class="mt-4"></div>
-
-                    <script>
-                    document.getElementById('contactForm').addEventListener('submit', function(e) {
-                        e.preventDefault();
-                        
-                        const submitButton = this.querySelector('button[type="submit"]');
-                        const formMessage = document.getElementById('form-message');
-                        
-                        // Désactiver le bouton pendant l'envoi
-                        submitButton.disabled = true;
-                        submitButton.innerHTML = 'Envoi en cours...';
-                        
-                        // Récupérer les données du formulaire
-                        const formData = new FormData(this);
-                        
-                        // Envoyer la requête
-                        fetch('contact.php', {
-                            method: 'POST',
-                            body: formData
-                        })
-                        .then(response => {
-                            console.log('Response status:', response.status);
-                            console.log('Response headers:', response.headers);
-                            return response.text().then(text => {
-                                console.log('Raw response:', text);
-                                try {
-                                    return JSON.parse(text);
-                                } catch (e) {
-                                    console.error('JSON parse error:', e);
-                                    throw new Error('Invalid JSON response from server');
-                                }
-                            });
-                        })
-                        .then(data => {
-                            console.log('Parsed data:', data);
-                            
-                            // Réactiver le bouton
-                            submitButton.disabled = false;
-                            submitButton.innerHTML = '<?php echo __('sendMessage'); ?>';
-                            
-                            // Afficher le message
-                            if (data.success) {
-                                formMessage.className = 'alert alert-success';
-                                formMessage.textContent = 'Votre message a été envoyé avec succès.';
-                                this.reset();
-                            } else {
-                                formMessage.className = 'alert alert-danger';
-                                formMessage.textContent = data.message || 'Une erreur est survenue lors de l\'envoi du message. Veuillez réessayer.';
-                            }
-                        })
-                        .catch(error => {
-                            console.error('Fetch error:', error);
-                            // En cas d'erreur
-                            submitButton.disabled = false;
-                            submitButton.innerHTML = '<?php echo __('sendMessage'); ?>';
-                            formMessage.className = 'alert alert-danger';
-                            formMessage.textContent = 'Une erreur est survenue lors de l\'envoi du message. Veuillez réessayer.';
-                        });
-                    });
-                    </script>
                 </div>
             </div>
-            <div class="st-height-b0 st-height-lg-b30"></div>
         </div>
         <div class="st-height-b100 st-height-lg-b80"></div>
     </section>

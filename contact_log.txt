@@ -92,3 +92,6 @@
 [2025-06-03 22:37:51] Tentative d'envoi - Nom: Dea***, Email: com***, Sujet: Mollit animi ea qua
 [2025-06-03 22:37:51] Tentative d'envoi de l'email...
 [2025-06-03 22:37:54] Email envoyé avec succès!
+[2025-06-03 22:47:00] Tentative d'envoi - Nom: Ian***, Email: com***, Sujet: Magnam qui ut quis a
+[2025-06-03 22:47:00] Tentative d'envoi de l'email...
+[2025-06-03 22:47:03] Email envoyé avec succès!
