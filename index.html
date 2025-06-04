@@ -84,6 +84,10 @@
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <!-- Notre script -->
     <script src="js/email.js"></script>
+    <!-- Script de traduction -->
+    <script src="js/translations.js"></script>
+    <!-- Typed.js -->
+    <script src="typed.min.js"></script>
 </head>
 
 <body id="home">
@@ -100,13 +104,13 @@
                     <div class="st-main-header-right">
                         <div class="st-nav">
                             <ul class="st-nav-list st-onepage-nav">
-                                <li><a href="#home" class="st-smooth-move">Accueil</a></li>
-                                <li><a href="#about" class="st-smooth-move">À propos</a></li>
-                                <li><a href="#contact" class="st-smooth-move">Contact</a></li>
+                                <li><a href="#home" class="st-smooth-move" data-translate="home">Accueil</a></li>
+                                <li><a href="#about" class="st-smooth-move" data-translate="about">À propos</a></li>
+                                <li><a href="#contact" class="st-smooth-move" data-translate="contact">Contact</a></li>
                             </ul>
                             <div class="st-lang-switcher">
-                                <a href="#" class="st-lang-btn active">FR</a>
-                                <a href="#" class="st-lang-btn">EN</a>
+                                <button type="button" class="st-lang-btn active" data-lang="fr">FR</button>
+                                <button type="button" class="st-lang-btn" data-lang="en">EN</button>
                             </div>
                             <div class="sp-cvbtn">
                                 <svg viewBox="0 0 513.64 513.64">
@@ -131,29 +135,10 @@
     <section class="st-hero st-style2 st-bg st-dynamic-bg" data-src='assets/img/hero-bg-2.jpg'>
         <div class="container animate__animated animate__bounceInDown">
             <div class="st-hero-text">
-                <h1>Bonjour <span>Sountong-Noma Hyacinthe COMPAORE</span></h1>
+                <h1><span data-translate="hello">Bonjour</span> <span>Sountong-Noma Hyacinthe COMPAORE</span></h1>
                 <p class="designation">
                     <span id="typed2"></span>
                 </p>
-                <script>
-                    document.addEventListener('DOMContentLoaded', function () {
-                        var typed2 = new Typed('#typed2', {
-                            strings: [
-                                "Développeur Full Stack",
-                                "Développeur Web",
-                                "Développeur Mobile",
-                                "Développeur TYPO3",
-                                "Développeur Laravel"
-                            ],
-                            typeSpeed: 40,
-                            backSpeed: 40,
-                            startDelay: 1000,
-                            backDelay: 1500,
-                            loop: true,
-                            smartBackspace: true,
-                        });
-                    });
-                </script>
                 <div class="st-hero-social-links">
                     <a href="https://web.facebook.com/?_rdc=1&_rdr" class="st-social-btn">
                         <i class="fab fa-facebook-f"></i>
@@ -181,8 +166,8 @@
         <div class="st-height-b100 st-height-lg-b80"></div>
         <div class="container">
             <div class="st-section-heading st-style1">
-                <h4 class="st-section-heading-title">À propos</h4>
-                <h2 class="st-section-heading-subtitle">Qui suis-je ?</h2>
+                <h4 class="st-section-heading-title" data-translate="aboutMe">À propos</h4>
+                <h2 class="st-section-heading-subtitle" data-translate="aboutMeSubtitle">Qui suis-je ?</h2>
             </div>
             <div class="st-height-b25 st-height-lg-b25"></div>
         </div>
@@ -203,20 +188,20 @@
                         <div class="st-vertical-mist-le-in animate__animated animate__backInRight">
                             <div class="st-text-block st-style1">
                                 <h2 class="st-text-block-title">Hyacinthe COMPAORE</h2>
-                                <h4 class="st-text-block-subtitle">Développeur Full Stack</h4>
+                                <h4 class="st-text-block-subtitle" data-translate="developer">Développeur Full Stack</h4>
                                 <div class="st-text-block-text">
-                                    <p>Je suis un développeur passionné avec une expertise en développement web et mobile. Mon objectif est de créer des applications performantes et intuitives qui répondent aux besoins des utilisateurs.</p>
+                                    <p data-translate="aboutText">Je suis un développeur passionné avec une expertise en développement web et mobile. Mon objectif est de créer des applications performantes et intuitives qui répondent aux besoins des utilisateurs.</p>
                                 </div>
                                 <ul class="st-text-block-details st-mp0">
-                                    <li><span>Date de naissance</span> : <span>19 septembre 2002</span></li>
-                                    <li><span>Téléphone</span> : <span>+22673131966</span></li>
-                                    <li><span>Email</span> : <span>compaoreh338@gmail.com</span></li>
-                                    <li><span>Adresse</span> : <span>Ouagadougou</span></li>
-                                    <li><span>Langues</span> : <span>Français, anglais, mooré</span></li>
-                                    <li><span>Disponibilité</span> : <span>Disponible</span></li>
+                                    <li><span data-translate="birthDate">Date de naissance</span> : <span>19 septembre 2002</span></li>
+                                    <li><span data-translate="phone">Téléphone</span> : <span>+22673131966</span></li>
+                                    <li><span data-translate="email">Email</span> : <span>compaoreh338@gmail.com</span></li>
+                                    <li><span data-translate="address">Adresse</span> : <span>Ouagadougou</span></li>
+                                    <li><span data-translate="languages">Langues</span> : <span>Français, anglais, mooré</span></li>
+                                    <li><span data-translate="available">Disponible</span> : <span>Disponible</span></li>
                                 </ul>
                                 <div class="st-text-block-btn animate__animated animate__flipInY">
-                                    <a href="Ouagadougou, Saaba.pdf" class="st-btn st-style1 st-color1" download>Télécharger CV</a>
+                                    <a href="Ouagadougou, Saaba.pdf" class="st-btn st-style1 st-color1" download data-translate="downloadCV">Télécharger CV</a>
                                 </div>
                             </div>
                         </div>
@@ -228,11 +213,11 @@
             <div class="st-tech-tools-section" style="margin-top: 40px;">
                 <div class="row">
                     <div class="col-md-6">
-                        <h3>Technologies</h3>
+                        <h3 data-translate="technologies_title">Technologies</h3>
                         <div class="st-tech-icons-grid" id="tech-icons-grid"></div>
                     </div>
                     <div class="col-md-6">
-                        <h3>Outils</h3>
+                        <h3 data-translate="tools_title">Outils</h3>
                         <div class="st-tools-icons-grid" id="tools-icons-grid"></div>
                     </div>
                 </div>
@@ -263,8 +248,8 @@
         <div class="st-height-b100 st-height-lg-b80"></div>
         <div class="container">
             <div class="st-section-heading st-style1">
-                <h4 class="st-section-heading-title">Contact</h4>
-                <h2 class="st-section-heading-subtitle">Parlons de votre projet</h2>
+                <h4 class="st-section-heading-title" data-translate="contact">Contact</h4>
+                <h2 class="st-section-heading-subtitle" data-translate="contactSubtitle">Parlons de votre projet</h2>
             </div>
             <div class="st-height-b25 st-height-lg-b25"></div>
         </div>
@@ -275,21 +260,21 @@
                         <div class="st-single-contact-info">
                             <i class="fas fa-phone-alt"></i>
                             <div class="st-single-info-details">
-                                <h4>Téléphone</h4>
+                                <h4 data-translate="phone">Téléphone</h4>
                                 <a href="tel:+22673131966"><span>+226 73 13 19 66</span></a>
                             </div>
                         </div>
                         <div class="st-single-contact-info">
                             <i class="fas fa-envelope"></i>
                             <div class="st-single-info-details">
-                                <h4>Email</h4>
+                                <h4 data-translate="email">Email</h4>
                                 <a href="mailto:compaoreh338@gmail.com">compaoreh338@gmail.com</a>
                             </div>
                         </div>
                         <div class="st-single-contact-info">
                             <i class="fas fa-map-marker-alt"></i>
                             <div class="st-single-info-details">
-                                <h4>Adresse</h4>
+                                <h4 data-translate="address">Adresse</h4>
                                 <span>Ouagadougou</span>
                             </div>
                         </div>
@@ -303,18 +288,18 @@
                         </div>
                         
                         <div class="st-form-field">
-                            <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                            <input type="text" id="name" name="name" placeholder="Votre nom" required data-translate="name">
                         </div>
                         <div class="st-form-field">
                             <input type="email" id="email" name="email" placeholder="Votre email" required>
                         </div>
                         <div class="st-form-field">
-                            <input type="text" id="subject" name="subject" placeholder="Sujet" required>
+                            <input type="text" id="subject" name="subject" placeholder="Sujet" required data-translate="subject">
                         </div>
                         <div class="st-form-field">
-                            <textarea id="msg" name="msg" placeholder="Votre message" required></textarea>
+                            <textarea id="msg" name="msg" placeholder="Votre message" required data-translate="message"></textarea>
                         </div>
-                        <button type="submit" class="st-btn st-style1 st-color1 st-size-medium">Envoyer</button>
+                        <button type="submit" class="st-btn st-style1 st-color1 st-size-medium" data-translate="sendMessage">Envoyer</button>
                     </form>
                 </div>
             </div>
@@ -327,7 +312,7 @@
     <footer>
         <div class="container">
             <div class="st-copyright-wrap text-center">
-                <p class="st-copyright-text">© 2024 Tous droits réservés</p>
+                <p class="st-copyright-text" data-translate="rights">© 2024 Tous droits réservés</p>
             </div>
         </div>
     </footer>
@@ -340,7 +325,6 @@
     <script src="wow.min.js"></script>
     <script src="ripples.min.js"></script>
     <script src="particles.min.js"></script>
-    <script src="typed.min.js"></script>
     <script src="main.js"></script>
     <script>
     const technologies = [
