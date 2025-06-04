@@ -29,7 +29,15 @@ const translations = {
             "Développeur Mobile",
             "Développeur TYPO3",
             "Développeur Laravel"
-        ]
+        ],
+        values: {
+            birthDate: "19 septembre 2002",
+            phone: "+226 73 13 19 66",
+            email: "compaoreh338@gmail.com",
+            address: "Ouagadougou",
+            languages: "Français, anglais, mooré",
+            available: "Disponible"
+        }
     },
     en: {
         home: "Home",
@@ -61,7 +69,15 @@ const translations = {
             "Mobile Developer",
             "TYPO3 Developer",
             "Laravel Developer"
-        ]
+        ],
+        values: {
+            birthDate: "September 19, 2002",
+            phone: "+226 73 13 19 66",
+            email: "compaoreh338@gmail.com",
+            address: "Ouagadougou",
+            languages: "French, English, Mooré",
+            available: "Available"
+        }
     }
 };
 
@@ -107,6 +123,15 @@ function changeLanguage(lang) {
             } else {
                 element.textContent = translations[lang][key];
             }
+        }
+    });
+
+    // Mettre à jour les valeurs des détails personnels
+    const details = document.querySelectorAll('.st-text-block-details li span:last-child');
+    details.forEach(detail => {
+        const key = detail.getAttribute('data-value');
+        if (key && translations[lang].values[key]) {
+            detail.textContent = translations[lang].values[key];
         }
     });
 
